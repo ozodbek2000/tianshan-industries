@@ -1,0 +1,20 @@
+@use "base/reset";
+@use "base/fonts";
+@use "base/vars";
+@use "base/root";
+@use "base/mixin" as *;
+@use "base/common";
+@use "components/header";
+@use "components/prod";
+
+[class*="__container"] {
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0px 16px;
+    min-width: 0;
+}
+body {
+    color: var(--dark-blue-grey);
+    font-family: var(--opensans);
+    font-size: 16px;
+}

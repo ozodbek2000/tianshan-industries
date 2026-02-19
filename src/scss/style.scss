@@ -6,6 +6,7 @@
 @use "base/common";
 @use "components/header";
 @use "components/prod";
+@use "components/production";
 
 [class*="__container"] {
     max-width: 1536px;

@@ -6,13 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tianshan Industries</title>
         <link rel="stylesheet" href="css/style.css" />
-        <!-- <link rel="icon" type="image/x-icon" href="../img/png/favicon.png" /> -->
+        <!-- <link rel="icon" type="image/x-icon" href="../favicon.ico" /> -->
     </head>
     <body>
         <header class="header">
     <a href="##" class="header__logo">
         <img class="desktop-only" src="../img/webp/logo.webp" alt="logo" />
-        <img class="mobile-only" src="../img/webp/mobile-logo.webp" alt="logo" />
+        <img
+            class="mobile-only"
+            src="../img/webp/mobile-logo.webp"
+            alt="logo"
+        />
     </a>
     <div class="header__menu">
         <ul class="header__top">
@@ -44,9 +48,8 @@
                     </svg>
                 </a>
                 <ul class="header__languages_list">
-                    <li>EN</li>
-                    <li>UZ</li>
-                    <li>RU</li>
+                    <li><a href="##">UZ</a></li>
+                    <li><a href="##">RU</a></li>
                 </ul>
             </li>
         </ul>
@@ -59,7 +62,13 @@
                     <a href="##">о производстве</a>
                 </li>
                 <li class="header__nav_item">
-                    <a href="##" id="production"> продукция</a>
+                    <a href="##" id="production">
+                        продукция
+                        <img
+                            class="mobile-only"
+                            src="../img/svg/chevron-down.svg"
+                            alt="chevron-down"
+                    /></a>
                 </li>
                 <div class="header__nav_item-inner">
                     <h3 class="mobile-only">
@@ -86,7 +95,9 @@
                 <li class="header__nav_item">
                     <a href="##">контакты</a>
                 </li>
-                <button class="header__nav_submit">Оставить заявку</button>
+                <button class="header__nav_submit desktop-only">
+                    Оставить заявку
+                </button>
             </ul>
         </nav>
     </div>
@@ -99,9 +110,165 @@
         <main class="wrapper">
             <section class="prod">
     <div class="prod__container">
-
+        <h1 class="page-title prod__title">
+            производство извести <br />
+            и продуктов из известняка
+        </h1>
+    </div>
+    <div class="prod__content">
+        <div class="prod__container">
+            <div class="prod__columns">
+                <div class="prod__column">
+                    <div class="prod__column_image">
+                        <img
+                            src="../img/webp/prod01.webp"
+                            alt="about company"
+                        />
+                    </div>
+                    <div class="prod__column_content">
+                        <h2 class="prod__column_title blue-title">
+                            О компании
+                        </h2>
+                        <p class="prod__column_text text">
+                            Ведущий промышленный производитель извести и
+                            продукции из известняка, осуществляющий полный
+                            производственный цикл в Узбекистане.<br /><br />
+                            Собственное месторождение известняка обеспечивает
+                            устойчивость производства, стабильность поставок и
+                            защиту от колебаний цен на сырьевых рынках.
+                        </p>
+                        <a href="##" class="prod__column_link button"
+                            >подробнее о компании
+                            <img
+                                src="../img/svg/chevron-right.svg"
+                                alt="chevron-right"
+                        /></a>
+                    </div>
+                </div>
+                <div class="prod__column">
+                    <div class="prod__column_image">
+                        <img
+                            src="../img/webp/prod02.webp"
+                            alt="about production"
+                        />
+                    </div>
+                    <div class="prod__column_content">
+                        <h2 class="prod__column_title blue-title">
+                            О производстве
+                        </h2>
+                        <p class="prod__column_text text">
+                            Промышленное производство извести мощностью до 100
+                            000 тонн в год, основанное на полном
+                            производственном цикле и собственной сырьевой
+                            базе.<br /><br />
+                            Системный контроль качества продукции в соответствии
+                            с ГОСТ 9179-2018 и международными нормами.
+                        </p>
+                        <a href="##" class="prod__column_link button"
+                            >подробнее о компании
+                            <img
+                                src="../img/svg/chevron-right.svg"
+                                alt="chevron-right"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+            <section class="production">
+    <div class="production__container">
+        <div class="production__item">
+            <div class="production__columns">
+                <div class="production__content">
+                    <h2 class="production__title grey-title">Продукция</h2>
+                    <h3 class="production__content_title blue-title">
+                        Известь
+                    </h3>
+                    <p class="production__text text">
+                        Промышленное качество извести с высокой химической
+                        активностью, обеспечивающее надёжность и стабильность
+                        технологических процессов в строительстве, металлургии и
+                        производстве газобетона.
+                    </p>
+                    <a class="production__button button" href="##"
+                        >Оставить заявку
+                        <img
+                            src="../img/svg/chevron-right.svg"
+                            alt="chevron-right"
+                    /></a>
+                    <div class="production__navigation">
+                        <svg
+                            class="production__navigation_prev"
+                            width="63"
+                            height="30"
+                            viewBox="0 0 63 30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M62 15H4"
+                                stroke="#00ADEF"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M8 20L3 15L8 10"
+                                stroke="#00ADEF"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                        <svg
+                            class="production__navigation_next"
+                            width="63"
+                            height="30"
+                            viewBox="0 0 63 30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M3 15H61"
+                                stroke="#00ADEF"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M57 10L62 15L57 20"
+                                stroke="#00ADEF"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="production__slider">
+                    <div class="production__swiper swiper-container">
+                        <div class="production__wrapper swiper-wrapper">
+                            <div class="production__slide swiper-slide">
+                                <div class="production__slide_img">
+                                    <img
+                                        src="../img/webp/production01.webp"
+                                        alt="product"
+                                    />
+                                </div>
+                                <div class="production__content">
+                                    <p>Известь негашеная комовая 5-20 мм</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         </main>
 
         

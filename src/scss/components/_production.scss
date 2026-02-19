@@ -1,0 +1,64 @@
+.production {
+    &__container {
+    }
+
+    &__item {
+    }
+
+    &__columns {
+        display: flex;
+    }
+
+    &__content {
+        flex: 0 0 40%;
+
+        &_title {
+        }
+    }
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__text {
+        margin: 16px 0px 53px 0px;
+        font-size: 16px;
+        max-width: 488px;
+    }
+
+    &__button {
+        max-width: 238px;
+        margin-bottom: 68px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        
+        svg {
+            cursor: pointer;
+        }
+        
+        &_prev {
+        }
+
+        &_next {
+        }
+    }
+
+    &__slider {
+        flex: 0 0 60%;
+    }
+
+    &__swiper {
+    }
+
+    &__wrapper {
+    }
+
+    &__slide {
+        &_img {
+        }
+    }
+}

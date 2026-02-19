@@ -13,6 +13,8 @@ const rename = require("gulp-rename");
 const del = require("del");
 const fileInclude = require("gulp-file-include");
 const webp = require("gulp-webp");
+const webpack = require("webpack-stream");
+const webpackConfig = require("./webpack.config.js");
 
 function clean() {
     return del(["dist/**"]);
@@ -34,16 +36,8 @@ function fonts() {
 }
 
 function scripts() {
-    return src("src/js/**/*.js")
-        .pipe(sourcemaps.init())
-        .pipe(
-            babel({
-                presets: ["@babel/preset-env"],
-            })
-        )
-        .pipe(concat("index.js"))
-        .pipe(uglify())
-        .pipe(sourcemaps.write("."))
+    return src("src/js/index.js")
+        .pipe(webpack(webpackConfig))
         .pipe(dest("dist/js"))
         .pipe(browserSync.stream());
 }

@@ -1,0 +1,168 @@
+.cases {
+    margin: 80px 0 0;
+
+    &__titlebox {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        svg {
+            cursor: pointer;
+
+            path {
+                transition: 0.3s ease all;
+            }
+        }
+
+        svg.swiper-button-disabled {
+            path {
+                stroke-width: var(--blue-light);
+            }
+        }
+    }
+
+    &__title {
+        max-width: 635px;
+    }
+
+    &__swiper {
+        position: relative;
+    }
+
+    &__pagination {
+        bottom: -31px !important;
+    }
+
+    &__slide {
+        position: relative;
+
+        &:nth-child(1) .cases__slide_content {
+            background-color: var(--block-1);
+        }
+        &:nth-child(2) .cases__slide_content {
+            background-color: var(--block-2);
+        }
+        &:nth-child(3) .cases__slide_content {
+            background-color: var(--block-3);
+        }
+        &:nth-child(4) .cases__slide_content {
+            background-color: var(--block-4);
+        }
+        &:nth-child(5) .cases__slide_content {
+            background-color: var(--block-5);
+        }
+
+        &_img img {
+            width: 100%;
+        }
+
+        &_content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: var(--white);
+            padding: 17px 24px;
+            text-align: center;
+            border-radius: 50px 50px 4px 4px;
+            min-height: 80px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            transition: 0.3s ease all;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: var(--raleway);
+                line-height: 140%;
+                transition: 0.3s ease all;
+            }
+
+            p {
+                overflow: hidden;
+                visibility: hidden;
+                max-height: 0;
+                opacity: 0;
+                transition: 0.3s ease all;
+                line-height: 140%;
+                font-family: var(--raleway);
+            }
+        }
+    }
+}
+
+/* ===============================
+   HOVER — ТОЛЬКО ДЛЯ DESKTOP
+================================ */
+@media (hover: hover) and (pointer: fine) {
+    .cases__slide:hover {
+        .cases__slide_content {
+            min-height: 234px;
+            padding: 24px;
+
+            p {
+                max-height: 300px;
+                opacity: 1;
+                visibility: visible;
+                margin: auto 0;
+            }
+        }
+    }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 767px) {
+    .cases {
+        margin: 48px 0 110px;
+
+        &__titlebox {
+            margin-bottom: 24px;
+        }
+
+        &__navigation {
+            display: none;
+        }
+
+        &__title {
+            max-width: 100%;
+            font-size: 23px;
+        }
+
+        &__slide {
+            &.active {
+                .cases__slide_content {
+                    min-height: 100%;
+                    padding: 19px;
+                    border-radius: 0px;
+                    p {
+                        max-height: 300px;
+                        opacity: 1;
+                        visibility: visible;
+                        margin: auto 0;
+                    }
+                }
+            }
+
+            &_content {
+                h3 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

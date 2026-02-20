@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 32px;
+    z-index: 2;
 
     &__logo {
         flex: 0 1 30%;
@@ -429,7 +430,7 @@
                 }
 
                 a {
-                    font-weight: 500;
+                    font-weight: 600;
                     text-transform: uppercase;
                     line-height: 140%;
                     font-family: var(--raleway);

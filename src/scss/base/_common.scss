@@ -68,6 +68,9 @@
     }
 }
 @media (max-width: 767px) {
+    .title {
+        font-size: 24px;
+    }
     .mobile-only {
         display: block !important;
     }

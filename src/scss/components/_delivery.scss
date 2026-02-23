@@ -37,6 +37,7 @@
     }
 
     &__item {
+        height: 300px;
     }
 
     &__tabs {
@@ -52,6 +53,12 @@
         font-size: 20px;
         line-height: 120%;
         cursor: pointer;
+        transition: 0.3s ease all;
+
+        &:hover {
+            background-color: var(--blue-grey);
+            color: var(--white);
+        }
 
         &.active {
             background-color: var(--blue-grey);
@@ -98,7 +105,7 @@
 
 @media (max-width: 767px) {
     .delivery {
-        margin: 72px 0px 0px 0px;
+        margin: 96px 0px 0px 0px;
         &__titlebox {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -141,6 +148,7 @@
         }
 
         &__item {
+            height: 420px;
         }
 
         &__tabs {

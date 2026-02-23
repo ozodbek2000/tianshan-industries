@@ -1,0 +1,216 @@
+.form {
+    margin: 125px 0px 80px 0px;
+    &__container {
+    }
+
+    &__columns {
+        display: flex;
+        max-width: 1377px;
+        gap: 20px;
+        background-color: var(--light-grey);
+        padding: 50px 42px 49px;
+        border-radius: 0px 250px 250px 0px;
+        position: relative;
+
+        & > img {
+            position: absolute;
+        }
+        img:nth-child(1) {
+            top: -45px;
+            right: -33px;
+        }
+        img:nth-child(2) {
+            right: -148px;
+            top: calc(50% - 94px);
+        }
+
+        &_content {
+            flex: 0 0 36%;
+        }
+
+        &_form {
+            flex: 0 1 488px;
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            input,
+            textarea {
+                background-color: var(--white);
+                height: 50px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                padding: 0px 16px;
+                &::placeholder {
+                    color: var(--dark-grey);
+                    line-height: 140%;
+                }
+                &[type="submit"] {
+                    margin-top: 12px;
+                    background-color: var(--blue) !important;
+                    cursor: pointer;
+                    max-width: 254px;
+                    border-radius: 2px 2px 12px 2px;
+                    text-align-last: left;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    background-image: url(../img/svg/chevron-right.svg);
+                    background-repeat: no-repeat;
+                    background-position-x: calc(100% - 15px);
+                    background-position-y: center;
+                }
+            }
+            textarea {
+                padding: 14px 16px;
+                resize: none;
+                height: 138px;
+            }
+        }
+
+        &_form-confidential {
+            display: flex;
+            gap: 20px;
+            line-height: 120%;
+            font-size: 14px;
+            svg {
+                flex: 0 0 24px;
+            }
+            a {
+                text-decoration: underline;
+                color: var(--blue);
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 140%;
+    }
+}
+
+@media (max-width: 767px) {
+    .form {
+        margin: 0px 0px 197px 0px;
+        &__container {
+        }
+
+        &__columns {
+            flex-direction: column;
+            max-width: inherit;
+            gap: 24px;
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            position: relative;
+
+            & > img {
+                position: absolute;
+            }
+            img:nth-child(1) {
+                top: inherit;
+                bottom: -75px;
+                right: -63px;
+                width: 182px;
+                height: 154px;
+            }
+            img:nth-child(2) {
+                right: 80px;
+                top: inherit;
+                bottom: -100px;
+                width: 110px;
+                height: 93px;
+            }
+
+            &_content {
+                flex: 0 0 36%;
+            }
+
+            &_form {
+                flex: 0 1 488px;
+                background-color: var(--light-grey);
+                padding: 32px 16px;
+                border-radius: 6px 6px 100px 6px;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+                input,
+                textarea {
+                    background-color: var(--white);
+                    height: 50px;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 16px;
+                    &::placeholder {
+                        color: var(--dark-grey);
+                        line-height: 140%;
+                    }
+                    &[type="submit"] {
+                        margin-top: 12px;
+                        background-color: var(--blue) !important;
+                        cursor: pointer;
+                        max-width: 254px;
+                        border-radius: 2px 2px 12px 2px;
+                        text-align-last: left;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 140%;
+                        text-transform: uppercase;
+                        background-image: url(../img/svg/chevron-right.svg);
+                        background-repeat: no-repeat;
+                        background-position-x: calc(100% - 15px);
+                        background-position-y: center;
+                    }
+                }
+                textarea {
+                    padding: 14px 16px;
+                    resize: none;
+                    height: 138px;
+                }
+            }
+
+            &_form-confidential {
+                display: flex;
+                gap: 20px;
+                line-height: 120%;
+                font-size: 14px;
+                align-items: center;
+                svg {
+                    flex: 0 0 24px;
+                }
+                a {
+                    text-decoration: underline;
+                    color: var(--blue);
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            font-size: 16px !important;
+            text-align: center;
+            font-size: 20px;
+            line-height: 140%;
+        }
+    }
+}

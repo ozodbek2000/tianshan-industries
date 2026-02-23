@@ -16,7 +16,7 @@
             cursor: pointer;
 
             path {
-                transition: 0.3s ease all;
+                transition:  0.8s ease all;
             }
         }
 
@@ -77,14 +77,14 @@
             flex-direction: column;
             justify-content: space-between;
 
-            transition: 0.3s ease all;
+            transition:  0.8s ease all;
 
             h3 {
                 font-size: 20px;
                 font-weight: 500;
                 font-family: var(--raleway);
                 line-height: 140%;
-                transition: 0.3s ease all;
+                transition:  0.8s ease all;
             }
 
             p {
@@ -92,7 +92,7 @@
                 visibility: hidden;
                 max-height: 0;
                 opacity: 0;
-                transition: 0.3s ease all;
+                transition:  0.8s ease all;
                 line-height: 140%;
                 font-family: var(--raleway);
             }
@@ -124,7 +124,7 @@
 ================================ */
 @media (max-width: 767px) {
     .cases {
-        margin: 48px 0 110px;
+        margin: 48px 0 96px;
 
         &__titlebox {
             margin-bottom: 24px;

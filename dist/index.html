@@ -9,7 +9,7 @@
         <!-- <link rel="icon" type="image/x-icon" href="../favicon.ico" /> -->
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="header">
     <a href="##" class="header__logo">
         <img class="desktop-only" src="../img/webp/logo.webp" alt="logo" />
         <img
@@ -106,9 +106,8 @@
     </div>
 </header>
 
-
         <main class="wrapper">
-            <section class="prod">
+            <section class="prod" id="prod">
     <div class="prod__container">
         <h1 class="page-title prod__title">
             производство извести <br />
@@ -209,14 +208,14 @@
                         >
                             <path
                                 d="M62 15H4"
-                                stroke="#00ADEF"
+                                stroke="#025288"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             />
                             <path
                                 d="M8 20L3 15L8 10"
-                                stroke="#00ADEF"
+                                stroke="#025288"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -232,14 +231,14 @@
                         >
                             <path
                                 d="M3 15H61"
-                                stroke="#00ADEF"
+                                stroke="#025288"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             />
                             <path
                                 d="M57 10L62 15L57 20"
-                                stroke="#00ADEF"
+                                stroke="#025288"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -248,7 +247,7 @@
                     </div>
                 </div>
                 <div class="production__slider">
-                    <div class="production__swiper swiper-container">
+                    <div class="production__swiper-1 swiper-container">
                         <div class="production__wrapper swiper-wrapper">
                             <div class="production__slide swiper-slide">
                                 <div class="production__slide_img">
@@ -348,7 +347,7 @@
                     /></a>
                     <div class="production__navigation">
                         <svg
-                            class="production__navigation_prev"
+                            class="production__navigation_prev-1"
                             width="63"
                             height="30"
                             viewBox="0 0 63 30"
@@ -357,21 +356,21 @@
                         >
                             <path
                                 d="M62 15H4"
-                                stroke="#00ADEF"
+                                stroke="#025288"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             />
                             <path
                                 d="M8 20L3 15L8 10"
-                                stroke="#00ADEF"
+                                stroke="#025288"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             />
                         </svg>
                         <svg
-                            class="production__navigation_next"
+                            class="production__navigation_next-1"
                             width="63"
                             height="30"
                             viewBox="0 0 63 30"
@@ -380,14 +379,14 @@
                         >
                             <path
                                 d="M3 15H61"
-                                stroke="#00ADEF"
+                                stroke="#025288"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             />
                             <path
                                 d="M57 10L62 15L57 20"
-                                stroke="#00ADEF"
+                                stroke="#025288"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -396,7 +395,7 @@
                     </div>
                 </div>
                 <div class="production__slider">
-                    <div class="production__swiper swiper-container">
+                    <div class="production__swiper-2 swiper-container">
                         <div class="production__wrapper swiper-wrapper">
                             <div class="production__slide swiper-slide">
                                 <div class="production__slide_img">
@@ -480,22 +479,37 @@
             <div class="production__certificates swiper-container">
                 <div class="production__certificates_wrapper swiper-wrapper">
                     <div class="production__certificates_image swiper-slide">
-                        <img
-                            src="../img/webp/certificate02.webp"
-                            alt="certificate"
-                        />
+                        <a
+                            href="../img/webp/certificate02.webp"
+                            data-fancybox="certificates"
+                        >
+                            <img
+                                src="../img/webp/certificate02.webp"
+                                alt="certificate"
+                            />
+                        </a>
                     </div>
                     <div class="production__certificates_image swiper-slide">
-                        <img
-                            src="../img/webp/certificate01.webp"
-                            alt="certificate"
-                        />
+                        <a
+                            href="../img/webp/certificate01.webp"
+                            data-fancybox="certificates"
+                        >
+                            <img
+                                src="../img/webp/certificate01.webp"
+                                alt="certificate"
+                            />
+                        </a>
                     </div>
                     <div class="production__certificates_image swiper-slide">
-                        <img
-                            src="../img/webp/certificate03.webp"
-                            alt="certificate"
-                        />
+                        <a
+                            href="../img/webp/certificate03.webp"
+                            data-fancybox="certificates"
+                        >
+                            <img
+                                src="../img/webp/certificate03.webp"
+                                alt="certificate"
+                            />
+                        </a>
                     </div>
                 </div>
                 <div class="production__pagination swiper-pagination"></div>
@@ -588,6 +602,43 @@
     </div>
 </section>
 
+            <section class="partners">
+    <div class="partners__container">
+        <div class="partners__title title">Партнёры компании</div>
+        <div class="partners__swiper">
+            <div class="partners__wrapper">
+                <!-- Original -->
+                <div class="partners__slide"><img src="../img/webp/partner01.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner02.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner03.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner04.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner05.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner06.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner07.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner08.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner09.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner10.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner11.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner12.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner13.webp" alt="partner" /></div>
+                <!-- Duplicate -->
+                <div class="partners__slide"><img src="../img/webp/partner01.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner02.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner03.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner04.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner05.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner06.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner07.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner08.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner09.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner10.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner11.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner12.webp" alt="partner" /></div>
+                <div class="partners__slide"><img src="../img/webp/partner13.webp" alt="partner" /></div>
+            </div>
+        </div>
+    </div>
+</section>
             <section class="cases">
     <div class="cases__container">
         <div class="cases__titlebox">
@@ -605,14 +656,14 @@
                 >
                     <path
                         d="M62 15H4"
-                        stroke="#00ADEF"
+                        stroke="#025288"
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                     />
                     <path
                         d="M8 20L3 15L8 10"
-                        stroke="#00ADEF"
+                        stroke="#025288"
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -628,14 +679,14 @@
                 >
                     <path
                         d="M3 15H61"
-                        stroke="#00ADEF"
+                        stroke="#025288"
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                     />
                     <path
                         d="M57 10L62 15L57 20"
-                        stroke="#00ADEF"
+                        stroke="#025288"
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -716,9 +767,155 @@
     </div>
 </section>
 
+            <section class="form">
+    <div class="form__container">
+        <div class="form__columns">
+            <img src="../img/webp/big-stone.webp" alt="big-stone" />
+            <img src="../img/webp/little-stone.webp" alt="little-stone" />
+            <div class="form__columns_content">
+                <h2 class="form__title title">Свяжитесь с нашими экспертами</h2>
+                <p class="form__subtitle text">
+                    Перезвоним, проконсультируем, подберём лучшие варианты
+                </p>
+            </div>
+            <div class="form__columns_form">
+                <form action="##">
+                    <input type="text" placeholder="Имя" />
+                    <input type="number" placeholder="Телефон" />
+                    <textarea
+                        name="##"
+                        id="##"
+                        placeholder="Сообщение"
+                    ></textarea>
+                    <div class="form__columns_form-confidential">
+                        <svg
+                            width="26"
+                            height="26"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M25 11.9029V13.0069C24.9985 15.5946 24.1606 18.1125 22.6112 20.1851C21.0618 22.2576 18.8839 23.7738 16.4024 24.5075C13.9209 25.2412 11.2687 25.1531 8.84136 24.2564C6.41402 23.3596 4.34158 21.7022 2.93315 19.5313C1.52472 17.3605 0.855749 14.7925 1.02601 12.2104C1.19627 9.62834 2.19665 7.17046 3.87793 5.20335C5.55922 3.23625 7.83134 1.86533 10.3554 1.29504C12.8795 0.72476 15.5203 0.985673 17.884 2.03887"
+                                stroke="#025288"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M25.0004 3.40625L13.0004 15.4182L9.40039 11.8182"
+                                stroke="#025288"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+
+                        <p>
+                            Нажимая кнопку “Отправить заявку”, вы соглашаетесь
+                            на <a href="##">обработку персональных данных.</a>
+                        </p>
+                    </div>
+                    <input
+                        class="button"
+                        type="submit"
+                        value="Отправить заявку"
+                    />
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
         </main>
 
         
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="footer__logo">
+                <a href="##">
+                    <img
+                        class="desktop-only"
+                        src="../img/webp/footer-logo.webp"
+                        alt="logo"
+                    />
+                    <img
+                        class="mobile-only"
+                        src="../img/webp/footer-logo-mobile.webp"
+                        alt="logo"
+                    />
+                </a>
+            </div>
+            <div class="footer__nav">
+                <ul class="footer__nav_list">
+                    <li><a href="##">о компании</a></li>
+                    <li><a href="##">продукция</a></li>
+                    <li><a href="##">контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__middle">
+            <div class="footer__middle_content">
+                <p class="footer__middle_content-address">
+                    Джизакская область, Форишский район, Эгизбулок МФЙ 3 сектор
+                </p>
+                <div class="footer__middle_content-tel"><a href="tel:+998953407050">+998 95 340 70 50</a></div>
+                <div class="footer__middle_content-mail">
+                    <a href="mailto:tianshanllc@gmail.com"
+                        >tianshanllc@gmail.com</a
+                    >
+                </div>
+
+                <div class="footer__middle_content-socials">
+                    <a href="##"
+                        ><img src="../img/webp/whatsapp.webp" alt="whatsapp"
+                    /></a>
+                    <a href="##"
+                        ><img src="../img/webp/telegram.webp" alt="telegram"
+                    /></a>
+                    <a href="##"
+                        ><img src="../img/webp/youtube.webp" alt="youtube"
+                    /></a>
+                    <a href="##"
+                        ><img src="../img/webp/facebook.webp" alt="facebook"
+                    /></a>
+                    <a href="##"
+                        ><img src="../img/webp/instagram.webp" alt="instagram"
+                    /></a>
+                </div>
+            </div>
+            <a href="#prod" class="footer__middle_up">
+                <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M8 16L13.2929 10.7071C13.6834 10.3166 14.3166 10.3166 14.7071 10.7071L20 16"
+                        stroke="#A8D9FF"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </a>
+        </div>
+        <div class="footer__dev">
+            <p class="footer__dev_rights">© СП ООО TIANSHAN INDUSTRIES 2026</p>
+            <div class="footer__dev_conf">
+                <a href="##">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__dev_inweb">
+                <a href="https://inweb.uz/" target="_blank"
+                    ><span>Разработка -</span> <img src="../img/webp/inweb.webp" alt="inweb"
+                /></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
         <script src="js/index.js"></script>
     </body>

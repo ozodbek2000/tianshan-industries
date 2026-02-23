@@ -1,0 +1,218 @@
+.footer {
+    background-color: var(--dark-blue-grey);
+    color: var(--white);
+    padding: 50px 0px 36px 0px;
+    &__top {
+        display: flex;
+    }
+
+    &__logo {
+        flex: 1 1 auto;
+    }
+
+    &__nav {
+        &_list {
+            display: flex;
+            gap: 64px;
+            a {
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 140%;
+                font-family: var(--raleway);
+                transition: 0.3s ease all;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    &__middle {
+        margin: 48px 0px 36px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &_content-tel {
+            a {
+                transition: 0.3s ease all;
+            }
+            a:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &_content-mail {
+            a {
+                transition: 0.3s ease all;
+            }
+            a:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &_content-address {
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        &_content-socials {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        &_up {
+            background: #536074;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+            border-radius: 100px;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__dev {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        &_rights {
+        }
+
+        &_conf {
+            text-align: center;
+            a {
+                transition: 0.3s ease all;
+            }
+            a:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &_inweb {
+            text-align: right;
+            a {
+                span {
+                    transition: 0.3s ease all;
+                }
+            }
+            a:hover {
+                span {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        background-color: var(--dark-blue-grey);
+        color: var(--white);
+        padding: 50px 0px 36px 0px;
+        text-align: center;
+        &__top {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__logo {
+            flex: 1 1 auto;
+            text-align: center;
+            a {
+                display: inline-flex;
+            }
+        }
+
+        &__nav {
+            &_list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                margin-top: 54px;
+                a {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    line-height: 140%;
+                    font-family: var(--raleway);
+                }
+            }
+        }
+
+        &__middle {
+            margin: 48px 0px 36px 0px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &_content {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            &_content-address {
+                font-size: 16px;
+                line-height: 140%;
+            }
+
+            &_content-socials {
+                margin-top: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+            }
+
+            &_up {
+                background: #536074;
+                box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+                border-radius: 100px;
+                width: 52px;
+                height: 52px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 42px;
+            }
+        }
+
+        &__dev {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 16px;
+
+            &_rights {
+                font-size: 14px;
+            }
+
+            &_conf {
+                text-align: inherit;
+                a {
+                    color: var(--dark-grey);
+                    font-size: 14px;
+                }
+            }
+
+            &_inweb {
+                text-align: inherit;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+            }
+        }
+    }
+}

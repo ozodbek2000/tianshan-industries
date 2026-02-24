@@ -25,6 +25,18 @@ const toggle = () => {
         $(".cases__slide").not(this).removeClass("active");
         $(this).toggleClass("active");
     });
+
+    $(".header__nav_submit").click(function (event) {
+        $('.popup').toggleClass("active");
+    });
+
+    $(".close, .overlay").click(function (event) {
+        $('.popup').removeClass("active");
+    });
+    $(".accordeon").click(function (event) {
+        $(".accordeon").not(this).removeClass("active");
+        $(this).toggleClass("active");
+    });
 };
 
 export default toggle;

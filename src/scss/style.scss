@@ -13,6 +13,9 @@
 @use "components/form";
 @use "components/footer";
 @use "components/popup";
+@use "components/about";
+@use "components/manufac";
+@use "components/accordeon";
 
 [class*="__container"] {
     max-width: 1536px;

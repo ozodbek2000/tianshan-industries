@@ -1,0 +1,131 @@
+.manufac {
+    &__container {
+        & > p:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        & > p {
+            line-height: 140%;
+            font-size: 20px;
+        }
+    }
+
+    &__bg {
+        &_wrapper {
+        }
+    }
+
+    &__breadcrumbs {
+        position: relative;
+        z-index: 2;
+        margin: 143px 0px 134px 0px;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 84px;
+    }
+
+    &__content {
+        border-radius: 0px 160px 0px 0px;
+        background-color: var(--white);
+        position: relative;
+        padding: 84px 0px 0px 0px;
+    }
+
+    &__accordeons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 72px;
+    }
+
+    &__accordeon {
+    }
+
+    &__image {
+        margin-top: 80px;
+        height: 440px;
+        overflow: hidden;
+        border-radius: 6px 6px 6px 150px;
+        position: relative;
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .manufac {
+        &__container {
+            & > p:not(:last-child) {
+                margin-bottom: 24px;
+            }
+            & > p {
+                line-height: 140%;
+                font-size: 16px;
+            }
+        }
+
+        &__bg {
+            &_wrapper {
+                img {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__breadcrumbs {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
+
+        &__title {
+            position: relative;
+            z-index: 2;
+            margin-top: 158px;
+            margin-bottom: 48px;
+        }
+
+        &__content {
+            border-radius: 0px 100px 0px 0px;
+            background-color: var(--white);
+            position: relative;
+            padding: 64px 0px 0px 0px;
+        }
+
+        &__accordeons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 48px;
+        }
+
+        &__accordeon {
+        }
+
+        &__image {
+            margin: 48px 0px;
+            height: 235px;
+            overflow: hidden;
+            border-radius: 6px 6px 6px 100px;
+            position: relative;
+
+            img {
+                position: absolute;
+                bottom: 0;
+                left: 10px;
+                width: 100%;
+                transform: scale(1.4);
+                object-fit: cover;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

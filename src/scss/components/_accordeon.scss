@@ -1,0 +1,170 @@
+.accordeon {
+    background-color: var(--light-grey);
+    padding: 24px 32px 32px 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        h3 {
+            color: var(--blue);
+        }
+    }
+
+    &.active {
+        h3 {
+            font-weight: 600;
+            color: var(--blue);
+        }
+        .accordeon__answer {
+            opacity: 1;
+            visibility: visible;
+            max-height: 800px;
+            padding-top: 24px;
+        }
+        .accordeon__vector {
+            transform: rotate(180deg);
+        }
+    }
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            font-size: 40px;
+            line-height: 120%;
+            font-family: var(--raleway);
+            transition: 0.3s ease all;
+        }
+    }
+
+    &__vector {
+        flex: 0 0 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        transition: 0.3s ease all;
+    }
+    &__answer {
+        max-width: 1091px;
+        max-height: 0px;
+        transition: 0.3s ease all;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0;
+        user-select: none;
+        p {
+            font-size: 20px;
+            line-height: 140%;
+            color: var(--dark-blue-grey);
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            font-family: var(--raleway);
+            color: var(--blue);
+            margin-bottom: 6px;
+            margin-top: 15px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 20px;
+            line-height: 140%;
+            li {
+                list-style-type: disc;
+                list-style-position: inside;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .accordeon {
+        background-color: var(--light-grey);
+        padding: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            h3 {
+                color: var(--blue);
+            }
+        }
+
+        &.active {
+            h3 {
+                font-weight: 600;
+                color: var(--blue);
+            }
+            .accordeon__answer {
+                opacity: 1;
+                visibility: visible;
+                max-height: 1000px;
+                padding-top: 24px;
+            }
+            .accordeon__vector {
+                transform: rotate(180deg);
+            }
+        }
+        &__question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                font-size: 20px;
+                line-height: 120%;
+                font-family: var(--raleway);
+                transition: 0.3s ease all;
+            }
+        }
+
+        &__vector {
+            flex: 0 0 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--white);
+            transition: 0.3s ease all;
+        }
+        &__answer {
+            max-width: 1091px;
+            max-height: 0px;
+            transition: 0.3s ease all;
+            opacity: 0;
+            visibility: hidden;
+            padding: 0;
+            user-select: none;
+            p {
+                font-size: 14px;
+                line-height: 140%;
+                color: var(--dark-blue-grey);
+            }
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                font-family: var(--raleway);
+                color: var(--blue);
+                margin-bottom: 6px;
+                margin-top: 8px;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                font-size: 16px;
+                line-height: 140%;
+                li {
+                    list-style-type: disc;
+                    list-style-position: inside;
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@
     </head>
     <body>
         <header class="header" id="header">
-    <a href="##" class="header__logo">
+    <a href="index.html" class="header__logo">
         <img class="desktop-only" src="../img/webp/logo.webp" alt="logo" />
         <img
             class="mobile-only"
@@ -56,10 +56,10 @@
         <nav class="header__nav">
             <ul class="header__nav_list">
                 <li class="header__nav_item">
-                    <a href="##">о компании</a>
+                    <a href="/about.html">о компании</a>
                 </li>
                 <li class="header__nav_item">
-                    <a href="##">о производстве</a>
+                    <a href="/manufacture.html">о производстве</a>
                 </li>
                 <li class="header__nav_item">
                     <a href="##" id="production">
@@ -829,7 +829,58 @@
 
         </main>
 
-        
+        <div class="popup">
+    <div class="popup__box">
+        <div class="popup__box_close close">
+            <img src="../img/svg/close.svg" alt="close" />
+        </div>
+        <div class="form__columns_content">
+            <h2 class="form__title title">Свяжитесь с нашими экспертами</h2>
+            <p class="form__subtitle text">
+                Перезвоним, проконсультируем, подберём лучшие варианты
+            </p>
+        </div>
+        <div class="form__columns_form">
+            <form action="##">
+                <input type="text" placeholder="Имя" />
+                <input type="number" placeholder="Телефон" />
+                <textarea name="##" id="##" placeholder="Сообщение"></textarea>
+                <div class="form__columns_form-confidential">
+                    <svg
+                        width="26"
+                        height="26"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M25 11.9029V13.0069C24.9985 15.5946 24.1606 18.1125 22.6112 20.1851C21.0618 22.2576 18.8839 23.7738 16.4024 24.5075C13.9209 25.2412 11.2687 25.1531 8.84136 24.2564C6.41402 23.3596 4.34158 21.7022 2.93315 19.5313C1.52472 17.3605 0.855749 14.7925 1.02601 12.2104C1.19627 9.62834 2.19665 7.17046 3.87793 5.20335C5.55922 3.23625 7.83134 1.86533 10.3554 1.29504C12.8795 0.72476 15.5203 0.985673 17.884 2.03887"
+                            stroke="#025288"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M25.0004 3.40625L13.0004 15.4182L9.40039 11.8182"
+                            stroke="#025288"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                    <p>
+                        Нажимая кнопку “Отправить заявку”, вы соглашаетесь на
+                        <a href="##">обработку персональных данных.</a>
+                    </p>
+                </div>
+                <input class="button" type="submit" value="Отправить заявку" />
+            </form>
+        </div>
+    </div>
+    <div class="popup__overlay overlay"></div>
+</div>
+
         <footer class="footer">
     <div class="footer__container">
         <div class="footer__top">

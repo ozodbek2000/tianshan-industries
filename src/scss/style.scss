@@ -16,6 +16,9 @@
 @use "components/about";
 @use "components/manufac";
 @use "components/accordeon";
+@use "components/limestone";
+@use "components/truck";
+@use "components/products";
 
 [class*="__container"] {
     max-width: 1536px;
@@ -27,4 +30,7 @@ body {
     color: var(--dark-blue-grey);
     font-family: var(--opensans);
     font-size: 16px;
+    &.lock {
+        overflow: hidden;
+    }
 }

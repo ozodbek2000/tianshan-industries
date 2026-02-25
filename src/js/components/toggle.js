@@ -28,10 +28,12 @@ const toggle = () => {
 
     $(".header__nav_submit").click(function (event) {
         $('.popup').toggleClass("active");
+        $('body').toggleClass("lock");
     });
 
     $(".close, .overlay").click(function (event) {
         $('.popup').removeClass("active");
+        $('body').removeClass("lock");
     });
     $(".accordeon").click(function (event) {
         $(".accordeon").not(this).removeClass("active");

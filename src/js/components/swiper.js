@@ -65,7 +65,7 @@ const swiper = () => {
             },
         },
     });
-    
+
     //DELIVERY SWIPER
     const cases = new Swiper(".cases__swiper", {
         navigation: {
@@ -98,24 +98,39 @@ const swiper = () => {
             },
         },
     });
-    
-    //PARTNERS SWIPER
-    // const partners = new Swiper(".partners__swiper", {
-    //     spaceBetween: 16,
-    //     slidesPerView: 1.5,
-    //     breakpoints: {
-    //         640: {
-    //             slidesPerView: 2,
-    //         },
-    //         768: {
-    //             slidesPerView: 3,
-    //         },
-    //         1024: {
-    //             slidesPerView: 5.5,
-    //             spaceBetween: 40,
-    //         },
-    //     },
-    // });
+
+    //PRODUCTS SWIPER
+    const products = new Swiper(".products__swiper", {
+        navigation: {
+            nextEl: ".products__navigation_next",
+            prevEl: ".products__navigation_prev",
+        },
+        pagination: {
+            el: ".cases__pagination",
+            clickable: true,
+        },
+        spaceBetween: 16,
+        slidesPerView: 1.4,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+                pagination: {
+                    el: ".cases__pagination",
+                    enabled: false,
+                },
+            },
+            1024: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+                pagination: {
+                    enabled: false,
+                },
+            },
+        },
+    });
 };
 
 export default swiper;

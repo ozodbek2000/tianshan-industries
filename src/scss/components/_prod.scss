@@ -107,7 +107,7 @@
         }
 
         &__content {
-            margin-top: 84px;
+            margin-top: 20px;
             border-radius: 0px 72px 0px 0px;
             padding-top: 64px;
         }
@@ -162,6 +162,7 @@
                 padding: 36px;
                 display: flex;
                 flex-direction: column;
+                border-radius: 0px 0px 48px 48px;
             }
 
             &_title {

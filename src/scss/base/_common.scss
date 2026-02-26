@@ -119,9 +119,13 @@
     .blue-title {
         color: var(--blue);
         font-size: 20px;
+        line-height: 1.2;
     }
     .button {
         font-size: 14px;
+        // padding-left: 16px;
+        white-space: nowrap;
+        gap: 12px;
     }
     .grey-title {
         font-size: 24px;

@@ -131,6 +131,35 @@ const swiper = () => {
             },
         },
     });
+
+    //PRODUCTS2 SWIPER
+    const products2 = new Swiper(".products__swiper-2", {
+        spaceBetween: 16,
+        slidesPerView: 1.4,
+        navigation: {
+            nextEl: ".products__navigation_next-2",
+            prevEl: ".products__navigation_prev-2",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+                pagination: {
+                    el: ".cases__pagination",
+                    enabled: false,
+                },
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                pagination: {
+                    enabled: false,
+                },
+            },
+        },
+    });
 };
 
 export default swiper;

@@ -93,9 +93,9 @@
                     </li>
                 </div>
                 <li class="header__nav_item">
-                    <a href="##">контакты</a>
+                    <a href="/contacts.html">контакты</a>
                 </li>
-                <button class="header__nav_submit desktop-only">
+                <button class="header__nav_submit desktop-only submit">
                     Оставить заявку
                 </button>
             </ul>
@@ -138,7 +138,7 @@
                     <div class="limestone__product_image">
                         <img src="../img/webp/product01.webp" alt="product" />
                     </div>
-                    <a href="##" class="limestone__product_submit button"
+                    <a href="##" class="limestone__product_submit button submit"
                         >Оставить заявку
                         <img
                             src="../img/svg/chevron-right.svg"
@@ -216,7 +216,7 @@
                     <div class="limestone__product_image">
                         <img src="../img/webp/product02.webp" alt="product" />
                     </div>
-                    <a href="##" class="limestone__product_submit button"
+                    <a href="##" class="limestone__product_submit button submit"
                         >Оставить заявку
                         <img
                             src="../img/svg/chevron-right.svg"
@@ -423,7 +423,7 @@
                     <div class="products__slide_text">
                         <h3>
                             Известь гашеная гидратная (пушонка)
-                            порошкообразная<br />
+                            порошкообразная<br class="desktop-only" />
                             0,08 мм
                         </h3>
                     </div>
@@ -538,7 +538,21 @@
         <div class="popup">
     <div class="popup__box">
         <div class="popup__box_close close">
-            <img src="../img/svg/close.svg" alt="close" />
+            <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M24.8 8L8 24.8M8 8L24.8 24.8"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
         </div>
         <div class="form__columns_content">
             <h2 class="form__title title">Свяжитесь с нашими экспертами</h2>
@@ -606,9 +620,9 @@
             </div>
             <div class="footer__nav">
                 <ul class="footer__nav_list">
-                    <li><a href="##">о компании</a></li>
+                    <li><a href="/about.html">о компании</a></li>
                     <li><a href="##">продукция</a></li>
-                    <li><a href="##">контакты</a></li>
+                    <li><a href="/contacts.html">контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -617,7 +631,9 @@
                 <p class="footer__middle_content-address">
                     Джизакская область, Форишский район, Эгизбулок МФЙ 3 сектор
                 </p>
-                <div class="footer__middle_content-tel"><a href="tel:+998953407050">+998 95 340 70 50</a></div>
+                <div class="footer__middle_content-tel">
+                    <a href="tel:+998953407050">+998 95 340 70 50</a>
+                </div>
                 <div class="footer__middle_content-mail">
                     <a href="mailto:tianshanllc@gmail.com"
                         >tianshanllc@gmail.com</a
@@ -642,7 +658,11 @@
                     /></a>
                 </div>
             </div>
-            <a href="#prod" class="footer__middle_up">
+            <a
+                href=""
+                class="footer__middle_up"
+                onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+            >
                 <svg
                     width="28"
                     height="28"
@@ -666,7 +686,8 @@
             </div>
             <div class="footer__dev_inweb">
                 <a href="https://inweb.uz/" target="_blank"
-                    ><span>Разработка -</span> <img src="../img/webp/inweb.webp" alt="inweb"
+                    ><span>Разработка -</span>
+                    <img src="../img/webp/inweb.webp" alt="inweb"
                 /></a>
             </div>
         </div>

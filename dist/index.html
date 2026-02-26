@@ -93,9 +93,9 @@
                     </li>
                 </div>
                 <li class="header__nav_item">
-                    <a href="##">контакты</a>
+                    <a href="/contacts.html">контакты</a>
                 </li>
-                <button class="header__nav_submit desktop-only">
+                <button class="header__nav_submit desktop-only submit">
                     Оставить заявку
                 </button>
             </ul>
@@ -136,7 +136,7 @@
                             устойчивость производства, стабильность поставок и
                             защиту от колебаний цен на сырьевых рынках.
                         </p>
-                        <a href="##" class="prod__column_link button"
+                        <a href="/about.html" class="prod__column_link button"
                             >подробнее о компании
                             <img
                                 src="../img/svg/chevron-right.svg"
@@ -163,7 +163,7 @@
                             Системный контроль качества продукции в соответствии
                             с ГОСТ 9179-2018 и международными нормами.
                         </p>
-                        <a href="##" class="prod__column_link button"
+                        <a href="/about.html" class="prod__column_link button"
                             >подробнее о компании
                             <img
                                 src="../img/svg/chevron-right.svg"
@@ -191,7 +191,7 @@
                         технологических процессов в строительстве, металлургии и
                         производстве газобетона.
                     </p>
-                    <a class="production__button button desktop-only" href="##"
+                    <a class="production__button button desktop-only submit" href="##"
                         >Оставить заявку
                         <img
                             src="../img/svg/chevron-right.svg"
@@ -315,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="production__button button mobile-only" href="##"
+                    <a class="production__button button mobile-only submit" href="##"
                         >Оставить заявку
                         <img
                             src="../img/svg/chevron-right.svg"
@@ -339,7 +339,7 @@
                         технологическая добавка в различных производственных
                         процессах.
                     </p>
-                    <a class="production__button button desktop-only" href="##"
+                    <a class="production__button button desktop-only submit" href="##"
                         >Оставить заявку
                         <img
                             src="../img/svg/chevron-right.svg"
@@ -463,7 +463,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="production__button button mobile-only" href="##"
+                    <a class="production__button button mobile-only submit" href="##"
                         >Оставить заявку
                         <img
                             src="../img/svg/chevron-right.svg"
@@ -832,7 +832,21 @@
         <div class="popup">
     <div class="popup__box">
         <div class="popup__box_close close">
-            <img src="../img/svg/close.svg" alt="close" />
+            <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M24.8 8L8 24.8M8 8L24.8 24.8"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
         </div>
         <div class="form__columns_content">
             <h2 class="form__title title">Свяжитесь с нашими экспертами</h2>
@@ -900,9 +914,9 @@
             </div>
             <div class="footer__nav">
                 <ul class="footer__nav_list">
-                    <li><a href="##">о компании</a></li>
+                    <li><a href="/about.html">о компании</a></li>
                     <li><a href="##">продукция</a></li>
-                    <li><a href="##">контакты</a></li>
+                    <li><a href="/contacts.html">контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -911,7 +925,9 @@
                 <p class="footer__middle_content-address">
                     Джизакская область, Форишский район, Эгизбулок МФЙ 3 сектор
                 </p>
-                <div class="footer__middle_content-tel"><a href="tel:+998953407050">+998 95 340 70 50</a></div>
+                <div class="footer__middle_content-tel">
+                    <a href="tel:+998953407050">+998 95 340 70 50</a>
+                </div>
                 <div class="footer__middle_content-mail">
                     <a href="mailto:tianshanllc@gmail.com"
                         >tianshanllc@gmail.com</a
@@ -936,7 +952,11 @@
                     /></a>
                 </div>
             </div>
-            <a href="#prod" class="footer__middle_up">
+            <a
+                href=""
+                class="footer__middle_up"
+                onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+            >
                 <svg
                     width="28"
                     height="28"
@@ -960,7 +980,8 @@
             </div>
             <div class="footer__dev_inweb">
                 <a href="https://inweb.uz/" target="_blank"
-                    ><span>Разработка -</span> <img src="../img/webp/inweb.webp" alt="inweb"
+                    ><span>Разработка -</span>
+                    <img src="../img/webp/inweb.webp" alt="inweb"
                 /></a>
             </div>
         </div>

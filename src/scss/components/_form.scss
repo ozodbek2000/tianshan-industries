@@ -157,6 +157,7 @@
                     &::placeholder {
                         color: var(--dark-grey);
                         line-height: 140%;
+                        font-size: 16px;
                     }
                     &[type="submit"] {
                         margin-top: 12px;

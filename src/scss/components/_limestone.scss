@@ -28,6 +28,7 @@
         position: relative;
         &_title {
             margin-bottom: 64px;
+            font-variant: lining-nums;
         }
     }
 
@@ -90,7 +91,7 @@
             margin: 0px -2px -2px 0px;
             min-height: 84px;
             width: 164px;
-            word-break: break-word;
+            // word-break: break-word;
             &:nth-child(-n + 6) {
                 background-color: var(--light-grey);
                 font-family: var(--raleway);
@@ -293,10 +294,10 @@
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: repeat(6, auto);
             grid-auto-flow: column;
-            margin: 0px -16px 0px -16px;
-            padding-left: 16px;
+            margin: 0 -16px 0 0px;
             overflow-x: scroll;
             padding-bottom: 14px;
+            position: relative;
 
             &::-webkit-scrollbar {
                 height: 9px;
@@ -325,6 +326,8 @@
                     font-family: inherit;
                     font-weight: 600;
                     min-height: unset;
+                    position: sticky;
+                    left: 0;
                 }
             }
         }

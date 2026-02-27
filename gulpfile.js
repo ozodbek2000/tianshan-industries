@@ -55,7 +55,7 @@ function html() {
 }
 
 async function images() {
-    return src("src/img/**/*.{svg,gif}")
+    return src(["src/img/**/*.{svg,gif}", "!src/img/no-optimize/**/*"])
         .pipe(imagemin())
         .pipe(dest("dist/img"))
         .pipe(browserSync.stream());
@@ -68,9 +68,15 @@ async function video() {
 }
 
 function convertWebp() {
-    return src("src/img/**/*.{jpg,jpeg,png}")
+    return src(["src/img/**/*.{jpg,jpeg,png}", "!src/img/no-optimize/**/*"])
         .pipe(webp({ quality: 85 }))
         .pipe(dest("dist/img"))
+        .pipe(browserSync.stream());
+}
+
+function imagesRaw() {
+    return src("src/img/no-optimize/**/*")
+        .pipe(dest("dist/img/no-optimize"))
         .pipe(browserSync.stream());
 }
 
@@ -86,14 +92,14 @@ function serve() {
     watch("src/scss/**/*.scss", styles);
     watch("src/**/*.html", html);
     watch("src/fonts/**/*", fonts);
-    watch("src/img/**/*", series(images, convertWebp));
+    watch("src/img/**/*", series(images, convertWebp, imagesRaw));
     watch("src/video/**/*", video);
     watch("src/js/**/*.js", scripts);
 }
 
 const build = series(
     clean,
-    parallel(styles, scripts, html, fonts, images, video, convertWebp)
+    parallel(styles, scripts, html, fonts, images, video, convertWebp, imagesRaw)
 );
 
 const dev = series(build, serve);

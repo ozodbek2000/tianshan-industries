@@ -86,7 +86,7 @@
                 font-size: 40px;
                 line-height: 140%;
                 font-family: var(--raleway);
-                margin-left: -290px;
+                margin-left: -245px;
                 color: var(--blue);
                 z-index: 2;
                 position: relative;
@@ -107,6 +107,7 @@
             color: var(--dark-blue-grey);
             margin-bottom: 80px;
             font-variant-numeric: normal;
+            font-family: var(--raleway);
         }
 
         &_cards {
@@ -137,6 +138,7 @@
             font-size: 40px;
             line-height: 140%;
             margin-top: 80px;
+            font-family: var(--raleway);
             strong {
                 color: var(--blue);
             }

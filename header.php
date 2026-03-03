@@ -25,8 +25,7 @@
                 <ul class="header__top">
                     <li class="header__top_address">
                         <p>
-                            Джизакская область, Форишский район, Эгизбулок МФЙ 3
-                            сектор
+                            <?= pll__('Джизакская область, Форишский район, Эгизбулок МФЙ 3 сектор'); ?>
                         </p>
                     </li>
                     <li class="header__top_number">
@@ -55,14 +54,14 @@
                 <nav class="header__nav">
                     <ul class="header__nav_list">
                         <li class="header__nav_item">
-                            <a href="/about.html">о компании</a>
+                            <a href="<?= get_permalink(147); ?>"><?= pll__('О компании'); ?></a>
                         </li>
                         <li class="header__nav_item">
-                            <a href="/manufacture.html">о производстве</a>
+                            <a href="<?= get_permalink(151); ?>"><?= pll__('О производстве'); ?></a>
                         </li>
                         <li class="header__nav_item">
                             <a href="##" id="production">
-                                продукция
+                                <?= pll__('Продукция'); ?>
                                 <img
                                     class="mobile-only"
                                     src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-down.svg"
@@ -75,35 +74,34 @@
                                     src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-left.svg"
                                     alt="chevron-left"
                                 />
-                                продукция
+                                <?= pll__('Продукция'); ?>
                             </h3>
                             <li>
-                                <a href="/limestone.html"
-                                    >Известь негашеная комовая</a
+                                <a href="<?= get_permalink(161); ?>"
+                                    ><?= pll__('Известь негашеная комовая'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="/crushed.html"
-                                    >Известь негашеная порошкообразная</a
+                                <a href="<?= get_permalink(189); ?>"
+                                    ><?= pll__('Известь негашеная порошкообразная'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="/fluffy.html"
-                                    >Известь гашеная гидратная (пушонка)
-                                    порошкообразная</a
+                                <a href="<?= get_permalink(191); ?>"
+                                    ><?= pll__('Известь гашеная гидратная (пушонка) порошкообразная'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="/fraction.html"
-                                    >известняк дробленый фракционный</a
+                                <a href="<?= get_permalink(193); ?>"
+                                    ><?= pll__('Известняк дробленый фракционный'); ?></a
                                 >
                             </li>
                         </div>
                         <li class="header__nav_item">
-                            <a href="/contacts.html">контакты</a>
+                            <a href="/contacts.html"><?= pll__('Контакты'); ?></a>
                         </li>
                         <button class="header__nav_submit desktop-only submit">
-                            Оставить заявку
+                            <?= pll__("Оставить заявку"); ?>
                         </button>
                     </ul>
                 </nav>

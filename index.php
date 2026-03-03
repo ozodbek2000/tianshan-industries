@@ -10,8 +10,7 @@
     <section class="prod" id="prod">
         <div class="prod__container">
             <h1 class="page-title prod__title">
-                производство извести <br />
-                и продуктов из известняка
+                <?= pll__('производство извести <br /> и продуктов из известняка'); ?>
             </h1>
         </div>
         <div class="prod__content">
@@ -26,21 +25,15 @@
                         </div>
                         <div class="prod__column_content">
                             <h2 class="prod__column_title blue-title">
-                                О компании
+                                <?= pll__('О компании'); ?>
                             </h2>
                             <p class="prod__column_text text">
-                                Ведущий промышленный производитель извести и
-                                продукции из известняка, осуществляющий полный
-                                производственный цикл в Узбекистане.<br /><br />
-                                Собственное месторождение известняка
-                                обеспечивает устойчивость производства,
-                                стабильность поставок и защиту от колебаний цен
-                                на сырьевых рынках.
+                                <?= pll__('Ведущий промышленный производитель извести и продукции из известняка, осуществляющий полный производственный цикл в Узбекистане.<br><br>Собственное месторождение известняка обеспечивает устойчивость производства, стабильность поставок и защиту от колебаний цен на сырьевых рынках.'); ?>
                             </p>
                             <a
                                 href="/about.html"
                                 class="prod__column_link button"
-                                >подробнее о компании
+                                ><?= pll__('подробнее о компании'); ?>
                                 <img
                                     src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
                                     alt="chevron-right"
@@ -56,21 +49,15 @@
                         </div>
                         <div class="prod__column_content">
                             <h2 class="prod__column_title blue-title">
-                                О производстве
+                                <?= pll__('О производстве'); ?>
                             </h2>
                             <p class="prod__column_text text">
-                                Промышленное производство извести мощностью до
-                                100 000 тонн в год, основанное на полном
-                                производственном цикле и собственной сырьевой
-                                базе.<br /><br />
-                                Системный контроль качества продукции в
-                                соответствии с ГОСТ 9179-2018 и международными
-                                нормами.
+                                <?= pll__('Промышленное производство извести мощностью до 100 000 тонн в год, основанное на полном производственном цикле и собственной сырьевой базе.<br><br>Системный контроль качества продукции в соответствии с ГОСТ 9179-2018 и международными нормами.'); ?>
                             </p>
                             <a
                                 href="/about.html"
                                 class="prod__column_link button"
-                                >подробнее о компании
+                                ><?= pll__('подробнее о компании'); ?>
                                 <img
                                     src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
                                     alt="chevron-right"
@@ -87,21 +74,17 @@
             <div class="production__item">
                 <div class="production__columns">
                     <div class="production__content">
-                        <h2 class="production__title grey-title">Продукция</h2>
+                        <h2 class="production__title grey-title"><?= pll__('Продукция'); ?></h2>
                         <h3 class="production__content_title blue-title">
-                            Известь
+                            <?= pll__('Известь'); ?>
                         </h3>
                         <p class="production__text text">
-                            Промышленное качество извести с высокой химической
-                            активностью, обеспечивающее надёжность и
-                            стабильность технологических процессов в
-                            строительстве, металлургии и производстве
-                            газобетона.
+                            <?= pll__('Промышленное качество извести с высокой химической активностью, обеспечивающее надёжность и стабильность технологических процессов в строительстве, металлургии и производстве газобетона.'); ?>
                         </p>
                         <a
                             class="production__button button desktop-only submit"
                             href="##"
-                            >Оставить заявку
+                            ><?= pll__('Оставить заявку'); ?>
                             <img
                                 src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
                                 alt="chevron-right"
@@ -155,86 +138,7 @@
                             </svg>
                         </div>
                     </div>
-                    <!-- <div class="production__slider">
-                        <div class="production__swiper-1 swiper-container">
-                            <div class="production__wrapper swiper-wrapper">
-                                <div class="production__slide swiper-slide">
-                                    <div class="production__slide_img">
-                                        <img
-                                            src="<?= bloginfo("template_url"); ?>/assets/img/webp/production01.webp"
-                                            alt="product"
-                                        />
-                                    </div>
-                                    <div class="production__slide_content">
-                                        <p>Известь негашеная комовая 5-20 мм</p>
-                                    </div>
-                                </div>
-                                <div class="production__slide swiper-slide">
-                                    <div class="production__slide_img">
-                                        <img
-                                            src="<?= bloginfo("template_url"); ?>/assets/img/webp/production02.webp"
-                                            alt="product"
-                                        />
-                                    </div>
-                                    <div class="production__slide_content">
-                                        <p>
-                                            Известь негашеная комовая 60-120 мм
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="production__slide swiper-slide">
-                                    <div class="production__slide_img">
-                                        <img
-                                            src="<?= bloginfo("template_url"); ?>/assets/img/webp/production03.webp"
-                                            alt="product"
-                                        />
-                                    </div>
-                                    <div class="production__slide_content">
-                                        <p>
-                                            Известь негашеная порошкообразная
-                                            0,08 мм
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="production__slide swiper-slide">
-                                    <div class="production__slide_img">
-                                        <img
-                                            src="<?= bloginfo("template_url"); ?>/assets/img/webp/production04.webp"
-                                            alt="product"
-                                        />
-                                    </div>
-                                    <div class="production__slide_content">
-                                        <p>
-                                            Известь негашеная порошкообразная
-                                            60-120 мм
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="production__slide swiper-slide">
-                                    <div class="production__slide_img">
-                                        <img
-                                            src="<?= bloginfo("template_url"); ?>/assets/img/webp/production05.webp"
-                                            alt="product"
-                                        />
-                                    </div>
-                                    <div class="production__slide_content">
-                                        <p>
-                                            Известь гашеная гидратная (пушонка)
-                                            порошкообразная 0,08 мм
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a
-                            class="production__button button mobile-only submit"
-                            href="##"
-                            >Оставить заявку
-                            <img
-                                src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
-                                alt="chevron-right"
-                        /></a>
-                    </div> -->
+                    
                     <div class="production__slider">
                         <div class="production__swiper-1 swiper-container">
                             <div class="production__wrapper swiper-wrapper">
@@ -276,7 +180,7 @@
                         </div>
 
                         <a class="production__button button mobile-only submit" href="##">
-                            Оставить заявку
+                            <?= pll__('Оставить заявку'); ?>
                             <img src="<?= bloginfo('template_url'); ?>/assets/img/svg/chevron-right.svg" alt="chevron-right" />
                         </a>
                     </div>
@@ -286,21 +190,15 @@
                 <div class="production__columns">
                     <div class="production__content">
                         <h3 class="production__content_title blue-title">
-                            Известняк дробленый
+                            <?= pll__('Известняк дробленый'); ?>
                         </h3>
                         <p class="production__text text">
-                            Прочный и экологичный минеральный материал,
-                            получаемый путём дробления природного известняка.
-                            Отличается стабильным химическим составом, высоким
-                            содержанием карбоната кальция (CaCO₃) и
-                            однородностью фракций. Применяется как сырьё,
-                            наполнитель, флюс или технологическая добавка в
-                            различных производственных процессах.
+                            <?= pll__('Прочный и экологичный минеральный материал, получаемый путём дробления природного известняка. Отличается стабильным химическим составом, высоким содержанием карбоната кальция (CaCO₃) и однородностью фракций. Применяется как сырьё, наполнитель, флюс или технологическая добавка в различных производственных процессах.'); ?>
                         </p>
                         <a
                             class="production__button button desktop-only submit"
                             href="##"
-                            >Оставить заявку
+                            ><?= pll__('Оставить заявку'); ?>
                             <img
                                 src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
                                 alt="chevron-right"
@@ -396,7 +294,7 @@
                         <a
                             class="production__button button mobile-only submit"
                             href="##"
-                            >Оставить заявку
+                            ><?= pll__('Оставить заявку'); ?>
                             <img
                                 src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
                                 alt="chevron-right"
@@ -406,7 +304,7 @@
             </div>
             <div class="production__certificate">
                 <h2 class="production__certificate_title title">
-                    Сертификаты соответствия
+                    <?= pll__('Сертификаты соответствия'); ?>
                 </h2>
                 <div class="production__certificates swiper-container">
                     <div
@@ -442,21 +340,16 @@
     <section class="delivery">
         <div class="delivery__container">
             <div class="delivery__titlebox">
-                <h2 class="delivery__titlebox_title">Поставка продукции</h2>
+                <h2 class="delivery__titlebox_title"><?= pll__('Поставка продукции'); ?></h2>
                 <div class="delivery__titlebox_image">
                     <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/delivery01.webp" alt="machine" />
                 </div>
                 <div class="delivery__titlebox_content">
                     <p class="text">
-                        Мы осуществляем доставку продукции по Узбекистану
-                        автотранспортом и ж/д полувагонами, а также экспортируем
-                        в страны ЕАЭС и СНГ на условиях FCA, DAP, CPT.
-                        Обеспечиваем полный контроль груза, оформление
-                        документов и безопасную транспортировку с проверкой
-                        совместимости материалов.
+                        <?= pll__('Мы осуществляем доставку продукции по Узбекистану автотранспортом и ж/д полувагонами, а также экспортируем в страны ЕАЭС и СНГ на условиях FCA, DAP, CPT. Обеспечиваем полный контроль груза, оформление документов и безопасную транспортировку с проверкой совместимости материалов.'); ?>
                     </p>
                     <a href="##" class="button"
-                        >подробнее о поставках
+                        ><?= pll__('подробнее о поставках'); ?>
                         <img
                             src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
                             alt="chevron-right"
@@ -487,72 +380,13 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
-            <!-- <div class="delivery__item">
-                <div class="delivery__tabs">
-                    <div class="delivery__tab active">
-                        Поставки продукции по Узбекистану
-                    </div>
-                    <div class="delivery__tab">Экспорт в страны ЕАЭС и СНГ</div>
-                    <div class="delivery__tab">Контроль доставки</div>
-                </div>
-                <div class="delivery__tab_content active">
-                    <h3 class="delivery__tab_content-title blue-title">
-                        Поставки продукции по Узбекистану
-                    </h3>
-                    <p>
-                        Наша компания осуществляет доставку продукции по всей
-                        Республике используя как транспортно-экспедиционные
-                        компании, так и собственный транспорт:
-                    </p>
-                    <ul>
-                        <li>
-                            Автотранспорт; цементовозы, самосвалы, тентованные
-                            полуприцепы (еврофуры)
-                        </li>
-                        <li>
-                            Железнодорожный транспорт; ж/д полувагоны
-                            грузоподъемностью 69 т.н.
-                        </li>
-                    </ul>
-                    <strong
-                        >Стоимость рассчитывается индивидуально для каждой
-                        заявки.</strong
-                    >
-                </div>
-                <div class="delivery__tab_content">
-                    <h3 class="delivery__tab_content-title blue-title">
-                        Экспорт в страны ЕАЭС и СНГ
-                    </h3>
-                    <p>Также мы экспортируем продукцию в страны ЕАЭС и СНГ.</p>
-                    <p>
-                        Отгрузку производим автомобильным и железнодорожным
-                        транспортом, на условиях FCA, DAP, CPT.
-                    </p>
-                    <p>Оформляем все необходимые таможенные документы.</p>
-                </div>
-                <div class="delivery__tab_content">
-                    <h3 class="delivery__tab_content-title blue-title">
-                        Контроль доставки
-                    </h3>
-                    <p>Контролируем поставку товара до вашего склада.</p>
-                    <p>
-                        В любой момент мы можем предоставить Вам информацию о
-                        местонахождении Вашего груза.
-                    </p>
-                    <p>
-                        Мы всегда проверяем совместимость опасных грузов при
-                        хранении и перевозке. Наши специалисты предоставят
-                        информацию о совместимости опасных грузов при хранении и
-                        перевозке, если Вам это необходимо.
-                    </p>
-                </div>
-            </div> -->
+            
         </div>
     </section>
 
     <section class="partners">
         <div class="partners__container">
-            <div class="partners__title title">Партнёры компании</div>
+            <div class="partners__title title"><?= pll__('Партнёры компании'); ?></div>
             <div class="partners__swiper">
                 <div class="partners__wrapper">
                     <?php 
@@ -575,7 +409,7 @@
         <div class="cases__container">
             <div class="cases__titlebox">
                 <h2 class="cases__title title">
-                    В каких областях используется наша продукция
+                    <?= pll__('В каких областях используется наша продукция'); ?>
                 </h2>
                 <div class="cases__navigation">
                     <svg
@@ -654,85 +488,6 @@
 
                         <?php endwhile; ?>
                     <?php endif; ?>
-                    <!-- <div class="cases__slide swiper-slide">
-                        <div class="cases__slide_img">
-                            <img
-                                src="<?= bloginfo("template_url"); ?>/assets/img/webp/cases01.webp"
-                                alt="mettalurgy"
-                            />
-                        </div>
-                        <div class="cases__slide_content">
-                            <h3>Металлургия</h3>
-                            <p>
-                                Негашёная известь используется как флюс: она
-                                снижает температуру плавления шлаков, связывает
-                                кислые примеси и улучшает их текучесть.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cases__slide swiper-slide">
-                        <div class="cases__slide_img">
-                            <img
-                                src="<?= bloginfo("template_url"); ?>/assets/img/webp/cases02.webp"
-                                alt="mettalurgy"
-                            />
-                        </div>
-                        <div class="cases__slide_content">
-                            <h3>Строительство и строительные материалы</h3>
-                            <p>
-                                Используется для приготовления строительных
-                                растворов и производства силикатных материалов.
-                                Улучшает прочность, пластичность и долговечность
-                                конструкций.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cases__slide swiper-slide">
-                        <div class="cases__slide_img">
-                            <img
-                                src="<?= bloginfo("template_url"); ?>/assets/img/webp/cases03.webp"
-                                alt="mettalurgy"
-                            />
-                        </div>
-                        <div class="cases__slide_content">
-                            <h3>Производство автоклавного газобетона</h3>
-                            <p>
-                                Обеспечивает образование пор и прочной структуры
-                                газобетонных блоков.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cases__slide swiper-slide">
-                        <div class="cases__slide_img">
-                            <img
-                                src="<?= bloginfo("template_url"); ?>/assets/img/webp/cases04.webp"
-                                alt="mettalurgy"
-                            />
-                        </div>
-                        <div class="cases__slide_content">
-                            <h3>Очистка воды и сточных вод</h3>
-                            <p>
-                                Нейтрализует кислоты и способствует удалению
-                                загрязнений, улучшая качество воды.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cases__slide swiper-slide">
-                        <div class="cases__slide_img">
-                            <img
-                                src="<?= bloginfo("template_url"); ?>/assets/img/webp/cases05.webp"
-                                alt="mettalurgy"
-                            />
-                        </div>
-                        <div class="cases__slide_content">
-                            <h3>Сельское хозяйство</h3>
-                            <p>
-                                Снижает кислотность почвы и применяется для
-                                санитарной обработки сельскохозяйственных
-                                объектов.
-                            </p>
-                        </div>
-                    </div> -->
                 </div>
                 <div class="cases__pagination swiper-pagination"></div>
             </div>
@@ -746,10 +501,10 @@
                 <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/little-stone.webp" alt="little-stone" />
                 <div class="form__columns_content">
                     <h2 class="form__title title">
-                        Свяжитесь с нашими экспертами
+                        <?= pll__('Свяжитесь с нашими экспертами'); ?>
                     </h2>
                     <p class="form__subtitle text">
-                        Перезвоним, проконсультируем, подберём лучшие варианты
+                        <?= pll__('Перезвоним, проконсультируем, подберём лучшие варианты'); ?>
                     </p>
                 </div>
                 <div class="form__columns_form">

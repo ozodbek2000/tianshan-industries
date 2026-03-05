@@ -53,7 +53,7 @@
                                     <a
                                         href="##"
                                         class="limestone__product_submit button submit"
-                                        >Оставить заявку <img src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
+                                        ><?= pll__('Оставить заявку'); ?> <img src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
                                         alt="chevron-right" /></a
                                     >
                                 </div>
@@ -344,7 +344,7 @@
             <div class="products__container">
                 <div class="products__titlebox">
                     <h2 class="title products__title">
-                        Другие товары компании
+                        <?= pll__('Другие товары компании'); ?>
                     </h2>
                     <div class="products__navigation">
                         <svg
@@ -451,65 +451,30 @@
         <section class="form">
             <div class="form__container">
                 <div class="form__columns">
-                    <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/big-stone.webp"
-                    alt="big-stone" /> <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/little-stone.webp"
-                    alt="little-stone" />
+                    <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/big-stone.webp" alt="big-stone" />
+                    <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/little-stone.webp" alt="little-stone" />
                     <div class="form__columns_content">
                         <h2 class="form__title title">
-                            Свяжитесь с нашими экспертами
+                            <?= pll__('Свяжитесь с нашими экспертами'); ?>
                         </h2>
                         <p class="form__subtitle text">
-                            Перезвоним, проконсультируем, подберём лучшие
-                            варианты
+                            <?= pll__('Перезвоним, проконсультируем, подберём лучшие варианты'); ?>
                         </p>
                     </div>
                     <div class="form__columns_form">
-                        <form action="##">
-                            <input type="text" placeholder="Имя" />
-                            <input type="number" placeholder="Телефон" />
-                            <textarea
-                                name="##"
-                                id="##"
-                                placeholder="Сообщение"
-                            ></textarea>
-                            <div class="form__columns_form-confidential">
-                                <svg
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M25 11.9029V13.0069C24.9985 15.5946 24.1606 18.1125 22.6112 20.1851C21.0618 22.2576 18.8839 23.7738 16.4024 24.5075C13.9209 25.2412 11.2687 25.1531 8.84136 24.2564C6.41402 23.3596 4.34158 21.7022 2.93315 19.5313C1.52472 17.3605 0.855749 14.7925 1.02601 12.2104C1.19627 9.62834 2.19665 7.17046 3.87793 5.20335C5.55922 3.23625 7.83134 1.86533 10.3554 1.29504C12.8795 0.72476 15.5203 0.985673 17.884 2.03887"
-                                        stroke="#025288"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M25.0004 3.40625L13.0004 15.4182L9.40039 11.8182"
-                                        stroke="#025288"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
+                        <?php
+                            $lang = pll_current_language();
 
-                                <p>
-                                    Нажимая кнопку “Отправить заявку”, вы
-                                    соглашаетесь на
-                                    <a href="##"
-                                        >обработку персональных данных.</a
-                                    >
-                                </p>
-                            </div>
-                            <input
-                                class="button"
-                                type="submit"
-                                value="Отправить заявку"
-                            />
-                        </form>
+                            $forms = [
+                                'ru' => '[contact-form-7 id="098e590" title="Контактная форма 1"]',
+                                'uz' => '[contact-form-7 id="ce11334" title="Kontakt forma"]',
+                                'en' => '[contact-form-7 id="67b0e05" title="Contact form"]',
+                            ];
+
+                            if (isset($forms[$lang])) {
+                                echo do_shortcode($forms[$lang]);
+                            }
+                        ?>
                     </div>
                 </div>
             </div>

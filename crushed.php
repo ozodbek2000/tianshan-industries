@@ -62,208 +62,6 @@
 
                         <?php endwhile; ?>
                     <?php endif; ?>
-                    <!-- <div class="limestone__content_title title">
-                        Известь строительная воздушная негашеная кальциевая
-                        порошкообразная по ГОСТ 9179-2018, фракция - 0,08
-                        мм. Металлургическая (pH Modifier – Lime)
-                    </div>
-                    <div class="limestone__columns">
-                        <div class="limestone__product">
-                            <div class="limestone__product_articule">
-                                (Код ТН ВЭД 2522100000)
-                            </div>
-                            <div class="limestone__product_image">
-                                <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/product03.webp"
-                                alt="product" />
-                            </div>
-                            <a
-                                href="##"
-                                class="limestone__product_submit button submit"
-                                >Оставить заявку <img src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
-                                alt="chevron-right" /></a
-                            >
-                        </div>
-                        <div class="limestone__char">
-                            <div class="limestone__char_title">
-                                Физико-химические характеристики
-                            </div>
-                            <table class="limestone__grid">
-                                <thead>
-                                    <tr>
-                                        <th>Показатель</th>
-                                        <th>Метод испытаний ГОСТ</th>
-                                        <th>ГОСТ 9179-2018 (норма стандарта)</th>
-                                        <th>ТУ для газобетона (дополнение к ГОСТ)</th>
-                                        <th>Фактические физико-химические характеристики</th>
-                                        <th>Соответствие требованиям</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Содержание активных (CaO + MgO), %</td>
-                                        <td>22688-2018</td>
-                                        <td>В 1 сорте не менее 90%</td>
-                                        <td>Не менее 90%</td>
-                                        <td>90,5-91,5</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Содержание СО2, %</td>
-                                        <td>22688-2018</td>
-                                        <td>В 1 сорте не более 3%</td>
-                                        <td>Не более 3%</td>
-                                        <td>1,44</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Активный MgO</td>
-                                        <td>22688-2018</td>
-                                        <td>Не более 5%</td>
-                                        <td>Не более 5%</td>
-                                        <td>3,99</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Нерастворившийся осадок</td>
-                                        <td>22688-2018</td>
-                                        <td>Не нормируется</td>
-                                        <td>Не нормируется</td>
-                                        <td>0,88</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Время гашения</td>
-                                        <td>22688-2018</td>
-                                        <td>Для 1 сорта не более 8 минут</td>
-                                        <td>Не более 5 минут</td>
-                                        <td>1,93</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Температура гашения</td>
-                                        <td>22688-2018</td>
-                                        <td>Не нормируется</td>
-                                        <td>Не нормируется</td>
-                                        <td>67,5</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Крупность помола</td>
-                                        <td>22688-2018</td>
-                                        <td>Не нормируется</td>
-                                        <td>Не более 0,074</td>
-                                        <td>0,072</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Степень дисперсности. Проход через сито № 02. Проход через сито № 008.</td>
-                                        <td>22688-2018</td>
-                                        <td>Не менее 98,5%</td>
-                                        <td>Не менее 98,5%</td>
-                                        <td>99,01</td>
-                                        <td>По согласованию с клиентом</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="limestone__content_title title">
-                        Известь строительная воздушная негашеная комовая по
-                        ГОСТ 9179-2018, фракция 60-120 мм (Компонент
-                        AAC-Автоклавный газобетон)
-                    </div>
-                    <div class="limestone__columns">
-                        <div class="limestone__product">
-                            <div class="limestone__product_articule">
-                                (Код ТН ВЭД 2522100000)
-                            </div>
-                            <div class="limestone__product_image">
-                                <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/product03.webp"
-                                alt="product" />
-                            </div>
-                            <a
-                                href="##"
-                                class="limestone__product_submit button submit"
-                                >Оставить заявку <img src="<?= bloginfo("template_url"); ?>/assets/img/svg/chevron-right.svg"
-                                alt="chevron-right" /></a
-                            >
-                        </div>
-                        <div class="limestone__char">
-                            <div class="limestone__char_title">
-                                Физико-химические характеристики
-                            </div>
-                            <table class="limestone__grid">
-                                <thead>
-                                    <tr>
-                                        <th>Показатель</th>
-                                        <th>Метод испытаний ГОСТ</th>
-                                        <th>ГОСТ 9179-2018 (норма стандарта)</th>
-                                        <th>ТУ для газобетона (дополнение к ГОСТ)</th>
-                                        <th>Фактические физико-химические характеристики</th>
-                                        <th>Соответствие требованиям</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Содержание активных (CaO + MgO), %</td>
-                                        <td>22688-2018</td>
-                                        <td>В 2 сорте не менее 80%</td>
-                                        <td>Не менее 80%</td>
-                                        <td>83,5-88,0</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Содержание СО2, %</td>
-                                        <td>22688-2018</td>
-                                        <td>В 1 сорте не более 4%</td>
-                                        <td>Не более 4%</td>
-                                        <td>2,3-2,8</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Активный MgO</td>
-                                        <td>22688-2018</td>
-                                        <td>Не более 5%</td>
-                                        <td>Не более 5%</td>
-                                        <td>3,99</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Непогасившиеся зерна</td>
-                                        <td>22688-2018</td>
-                                        <td>Не нормируется</td>
-                                        <td>Не нормируется</td>
-                                        <td>0,88</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Время гашения</td>
-                                        <td>22688-2018</td>
-                                        <td>Для 2 сорта не более 8 минут</td>
-                                        <td>Не более 5 минут</td>
-                                        <td>7-12 минут</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Температура гашения</td>
-                                        <td>22688-2018</td>
-                                        <td>Не нормируется</td>
-                                        <td>Не менее 65° С</td>
-                                        <td>68° С</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Крупность помола</td>
-                                        <td>22688-2018</td>
-                                        <td>Не нормируется</td>
-                                        <td>Не более 0,074</td>
-                                        <td>0,072</td>
-                                        <td>Соответствует</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -449,65 +247,30 @@
         <section class="form">
             <div class="form__container">
                 <div class="form__columns">
-                    <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/big-stone.webp"
-                    alt="big-stone" /> <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/little-stone.webp"
-                    alt="little-stone" />
+                    <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/big-stone.webp" alt="big-stone" />
+                    <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/little-stone.webp" alt="little-stone" />
                     <div class="form__columns_content">
                         <h2 class="form__title title">
-                            Свяжитесь с нашими экспертами
+                            <?= pll__('Свяжитесь с нашими экспертами'); ?>
                         </h2>
                         <p class="form__subtitle text">
-                            Перезвоним, проконсультируем, подберём лучшие
-                            варианты
+                            <?= pll__('Перезвоним, проконсультируем, подберём лучшие варианты'); ?>
                         </p>
                     </div>
                     <div class="form__columns_form">
-                        <form action="##">
-                            <input type="text" placeholder="Имя" />
-                            <input type="number" placeholder="Телефон" />
-                            <textarea
-                                name="##"
-                                id="##"
-                                placeholder="Сообщение"
-                            ></textarea>
-                            <div class="form__columns_form-confidential">
-                                <svg
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M25 11.9029V13.0069C24.9985 15.5946 24.1606 18.1125 22.6112 20.1851C21.0618 22.2576 18.8839 23.7738 16.4024 24.5075C13.9209 25.2412 11.2687 25.1531 8.84136 24.2564C6.41402 23.3596 4.34158 21.7022 2.93315 19.5313C1.52472 17.3605 0.855749 14.7925 1.02601 12.2104C1.19627 9.62834 2.19665 7.17046 3.87793 5.20335C5.55922 3.23625 7.83134 1.86533 10.3554 1.29504C12.8795 0.72476 15.5203 0.985673 17.884 2.03887"
-                                        stroke="#025288"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M25.0004 3.40625L13.0004 15.4182L9.40039 11.8182"
-                                        stroke="#025288"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
+                        <?php
+                            $lang = pll_current_language();
 
-                                <p>
-                                    Нажимая кнопку “Отправить заявку”, вы
-                                    соглашаетесь на
-                                    <a href="##"
-                                        >обработку персональных данных.</a
-                                    >
-                                </p>
-                            </div>
-                            <input
-                                class="button"
-                                type="submit"
-                                value="Отправить заявку"
-                            />
-                        </form>
+                            $forms = [
+                                'ru' => '[contact-form-7 id="098e590" title="Контактная форма 1"]',
+                                'uz' => '[contact-form-7 id="ce11334" title="Kontakt forma"]',
+                                'en' => '[contact-form-7 id="67b0e05" title="Contact form"]',
+                            ];
+
+                            if (isset($forms[$lang])) {
+                                echo do_shortcode($forms[$lang]);
+                            }
+                        ?>
                     </div>
                 </div>
             </div>

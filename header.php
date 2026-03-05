@@ -54,10 +54,10 @@
                 <nav class="header__nav">
                     <ul class="header__nav_list">
                         <li class="header__nav_item">
-                            <a href="<?= get_permalink(147); ?>"><?= pll__('О компании'); ?></a>
+                            <a href="<?= get_permalink(pll_get_post(147)); ?>"><?= pll__('О компании'); ?></a>
                         </li>
                         <li class="header__nav_item">
-                            <a href="<?= get_permalink(151); ?>"><?= pll__('О производстве'); ?></a>
+                            <a href="<?= get_permalink(pll_get_post(151)); ?>"><?= pll__('О производстве'); ?></a>
                         </li>
                         <li class="header__nav_item">
                             <a href="##" id="production">
@@ -77,28 +77,28 @@
                                 <?= pll__('Продукция'); ?>
                             </h3>
                             <li>
-                                <a href="<?= get_permalink(161); ?>"
+                                <a href="<?= get_permalink(pll_get_post(161)); ?>"
                                     ><?= pll__('Известь негашеная комовая'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="<?= get_permalink(189); ?>"
+                                <a href="<?= get_permalink(pll_get_post(189)); ?>"
                                     ><?= pll__('Известь негашеная порошкообразная'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="<?= get_permalink(191); ?>"
+                                <a href="<?= get_permalink(pll_get_post(191)); ?>"
                                     ><?= pll__('Известь гашеная гидратная (пушонка) порошкообразная'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="<?= get_permalink(193); ?>"
+                                <a href="<?= get_permalink(pll_get_post(193)); ?>"
                                     ><?= pll__('Известняк дробленый фракционный'); ?></a
                                 >
                             </li>
                         </div>
                         <li class="header__nav_item">
-                            <a href="/contacts.html"><?= pll__('Контакты'); ?></a>
+                            <a href="<?= get_permalink(pll_get_post(222)); ?>"><?= pll__('Контакты'); ?></a>
                         </li>
                         <button class="header__nav_submit desktop-only submit">
                             <?= pll__("Оставить заявку"); ?>

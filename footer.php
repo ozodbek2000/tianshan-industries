@@ -94,36 +94,33 @@
                     </div>
                     <div class="footer__nav">
                         <ul class="footer__nav_list">
-                            <li>информация</li>
-                            <li><a href="/about.html">о компании</a></li>
-                            <li>
-                                <a href="/manufacture.html">о производстве</a>
-                            </li>
-                            <li><a href="/contacts.html">контакты</a></li>
+                            <li><?= pll__('информация'); ?></li>
+                            <li><a href="<?= get_permalink(pll_get_post(147)); ?>"><?= pll__('О компании'); ?></a></li>
+                            <li><a href="<?= get_permalink(pll_get_post(151)); ?>"><?= pll__('О производстве'); ?></a></li>
+                            <li><a href="<?= get_permalink(pll_get_post(222)); ?>"><?= pll__('Контакты'); ?></a></li>
                         </ul>
                     </div>
                     <div class="footer__nav">
                         <ul class="footer__nav_list">
-                            <li>продукция</li>
+                            <li><?= pll__('Продукция'); ?></li>
                             <li>
-                                <a href="/limestone.html"
-                                    >Известь негашеная комовая</a
+                                <a href="<?= get_permalink(pll_get_post(161)); ?>"
+                                    ><?= pll__('Известь негашеная комовая'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="/crushed.html"
-                                    >Известь негашеная порошкообразная</a
+                                <a href="<?= get_permalink(pll_get_post(189)); ?>"
+                                    ><?= pll__('Известь негашеная порошкообразная'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="/fluffy.html"
-                                    >Известь гашеная гидратная (пушонка)
-                                    порошкообразная</a
+                                <a href="<?= get_permalink(pll_get_post(191)); ?>"
+                                    ><?= pll__('Известь гашеная гидратная (пушонка) порошкообразная'); ?></a
                                 >
                             </li>
                             <li>
-                                <a href="/fraction.html"
-                                    >известняк дробленый фракционный</a
+                                <a href="<?= get_permalink(pll_get_post(193)); ?>"
+                                    ><?= pll__('известняк дробленый фракционный'); ?></a
                                 >
                             </li>
                         </ul>
@@ -132,8 +129,7 @@
                 <div class="footer__middle">
                     <div class="footer__middle_content">
                         <p class="footer__middle_content-address">
-                            Джизакская область, Форишский район, Эгизбулок МФЙ 3
-                            сектор
+                            <?= pll__('Джизакская область, Форишский район, Эгизбулок МФЙ 3 сектор'); ?>
                         </p>
                         <div class="footer__middle_content-tel">
                             <a href="tel:+998953407050">+998 95 340 70 50</a>
@@ -195,14 +191,14 @@
                 </div>
                 <div class="footer__dev">
                     <p class="footer__dev_rights">
-                        © СП ООО TIANSHAN INDUSTRIES 2026
+                        <?= pll__('© СП ООО TIANSHAN INDUSTRIES 2026'); ?>
                     </p>
                     <div class="footer__dev_conf">
-                        <a href="##">Политика конфиденциальности</a>
+                        <a href="##"><?= pll__('Политика конфиденциальности'); ?></a>
                     </div>
                     <div class="footer__dev_inweb">
                         <a href="https://inweb.uz/" target="_blank"
-                            ><span>Разработка -</span>
+                            ><span><?= pll__('Разработка -'); ?></span>
                             <img src="<?= bloginfo("template_url"); ?>/assets/img/webp/inweb.webp" alt="inweb"
                         /></a>
                     </div>

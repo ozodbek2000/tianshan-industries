@@ -14,6 +14,126 @@ function tianshan_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'tianshan_scripts' );
 
+function theme_customizer_settings($wp_customize)
+{
+    // Add a section for custom settings
+    $wp_customize->add_section('theme_custom_settings', array(
+        'title'    => __('Номер, почта и адресс', 'your-theme-textdomain'),
+        'priority' => 200,
+    ));
+
+    // Phone
+    $wp_customize->add_setting('phone', array(
+        'default'           => '',
+        'type'              => 'theme_mod',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('phone', array(
+        'label'    => __('Номер', 'your-theme-textdomain'),
+        'section'  => 'theme_custom_settings',
+        'priority' => 10,
+        'type'     => 'text',
+    ));
+
+    // Email
+    $wp_customize->add_setting('email', array(
+        'default'           => '',
+        'type'              => 'theme_mod',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('email', array(
+        'label'    => __('Email', 'your-theme-textdomain'),
+        'section'  => 'theme_custom_settings',
+        'priority' => 10,
+        'type'     => 'text',   
+    ));
+
+    // Social links section
+    $wp_customize->add_section('theme_custom_settings_social', array(
+        'title'    => __('Социальные сети', 'your-theme-textdomain'),
+        'priority' => 200,
+    ));
+
+    // Facebook
+    $wp_customize->add_setting('facebook', array(
+        'default'           => '',
+        'type'              => 'theme_mod',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('facebook', array(
+        'label'    => __('Facebook', 'your-theme-textdomain'),
+        'section'  => 'theme_custom_settings_social',
+        'priority' => 10,
+        'type'     => 'url',
+    ));
+
+    // Instagram
+    $wp_customize->add_setting('instagram', array(
+        'default'           => '',
+        'type'              => 'theme_mod',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('instagram', array(
+        'label'    => __('Instagram', 'your-theme-textdomain'),
+        'section'  => 'theme_custom_settings_social',
+        'priority' => 10,
+        'type'     => 'url',
+    ));
+
+    // Whatsapp
+    $wp_customize->add_setting('whatsapp', array(
+        'default'           => '',
+        'type'              => 'theme_mod',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('whatsapp', array(
+        'label'    => __('Whatsapp', 'your-theme-textdomain'),
+        'section'  => 'theme_custom_settings_social',
+        'priority' => 10,
+        'type'     => 'url',
+    ));
+
+    // Telegram
+    $wp_customize->add_setting('telegram', array(
+        'default'           => '',
+        'type'              => 'theme_mod',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('telegram', array(
+        'label'    => __('Telegram', 'your-theme-textdomain'),
+        'section'  => 'theme_custom_settings_social',
+        'priority' => 10,
+        'type'     => 'url',
+    ));
+
+    // YouTube
+    $wp_customize->add_setting('youtube', array(
+        'default'           => '',
+        'type'              => 'theme_mod',
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('youtube', array(
+        'label'    => __('YouTube', 'your-theme-textdomain'),
+        'section'  => 'theme_custom_settings_social',
+        'priority' => 10,
+        'type'     => 'url',
+    ));
+}
+add_action('customize_register', 'theme_customizer_settings');
 
 function register_polylang_strings() {
 
@@ -69,6 +189,15 @@ function register_polylang_strings() {
         pll_register_string('manufacture', 'Производство TIANSHAN INDUSTRIES организовано по принципу полного технологического цикла — от добычи сырья до выпуска готовой продукции с гарантированными характеристиками.', );
         pll_register_string('manufacture', 'Такой подход позволяет обеспечивать стабильное качество, высокую повторяемость показателей и надёжность поставок для клиентов из различных отраслей промышленности.', );
 
+        pll_register_string('contacts', 'сп ооо tiashan industries', );
+
+        pll_register_string('product', 'Другие товары компании', );
+        pll_register_string('product', '(Синонимы: гидроокись кальция, пушонка, Hydrated lime)', );
+        pll_register_string('product', 'Гашёная известь, или гидратная известь (химическая формула <strong>Ca(OH)₂),</strong> — это тонкодисперсный порошок белого цвета, получаемый гидратацией высокоактивной негашёной извести. Процесс гидратации проходит в контролируемых условиях, что обеспечивает стабильные физико-химические параметры и высокую реакционную способность материала.', );
+        pll_register_string('product', 'Дроблёный известняк — природный материал, получаемый дроблением осадочной породы известняка (CaCO₃).', );
+        pll_register_string('product', 'Отличается высокой прочностью, химической стабильностью и широко применяется в промышленности и строительстве.', );
+        pll_register_string('product', 'Ассортимент известняка по фракциям', );
+        pll_register_string('product', '', );
 
     }
 }
